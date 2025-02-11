@@ -2,7 +2,7 @@
 # Build
 #
 #FROM debian:10 AS build
-FROM openjdk:11-jdk-slim
+FROM openjdk:11-jdk-slim AS build
 
 RUN apt-get update && apt-get -y install maven
 
